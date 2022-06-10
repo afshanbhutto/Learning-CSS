@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scle=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CSS Overflow</title>
+        <style>
+            body{
+                background-color: whitesmoke
+            }
+            h1{
+                border-bottom: 5px dashed yellow;
+            }
+            .parent{
+                display: flex
+            }
+            #first{
+                width:250px;
+                height: 250px;
+                border:3px solid purple;
+                margin-bottom:5px;
+                overflow: visible;
+            }
+            #second{
+                width:250px;
+                height: 250px;
+                border:3px solid green;
+                margin-bottom:5px;
+                margin-left: 5px;
+                overflow: hidden;
+            }
+            #third{
+                width:250px;
+                height: 250px;
+                border:3px solid red;
+                margin-bottom:5px;
+                margin-left: 5px;
+                overflow: scroll
+            }
+            #fourth{
+                width:250px;
+                height: 250px;
+                border:3px solid lightseagreen;
+                margin-bottom:5px;
+                margin-left: 5px;
+                overflow: auto
+            }
+            #fifth{
+                width:250px;
+                height: 250px;
+                border:3px solid black;
+                margin-bottom:5px;
+                margin-left: 5px;
+                overflow-x: auto
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Overflow</h1>
+        <div class="parent">
+            <div id="first">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus unde adipisci minus temporibus earum, dolores totam facere iste quisquam sequi necessitatibus harum veritatis amet maiores, nulla suscipit vero perferendis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit veritatis, saepe atque porro molestiae quo nihil, harum vero eveniet ea, cum nam ex. Odio illo nesciunt esse sequi cumque natus?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, numquam. Exercitationem repellendus libero ullam modi unde tempora itaque quidem perferendis, rerum nam enim facere recusandae saepe excepturi delectus impedit totam!
+            </div>
+            <div id="second">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus unde adipisci minus temporibus earum, dolores totam facere iste quisquam sequi necessitatibus harum veritatis amet maiores, nulla suscipit vero perferendis.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit veritatis, saepe atque porro molestiae quo nihil, harum vero eveniet ea, cum nam ex. Odio illo nesciunt esse sequi cumque natus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, numquam. Exercitationem repellendus libero ullam modi unde tempora itaque quidem perferendis, rerum nam enim facere recusandae saepe excepturi delectus impedit totam!
+            </div>
+            <div id="third">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus unde adipisci minus temporibus earum, dolores totam facere iste quisquam sequi necessitatibus harum veritatis amet maiores, nulla suscipit vero perferendis.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit veritatis, saepe atque porro molestiae quo nihil, harum vero eveniet ea, cum nam ex. Odio illo nesciunt esse sequi cumque natus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, numquam. Exercitationem repellendus libero ullam modi unde tempora itaque quidem perferendis, rerum nam enim facere recusandae saepe excepturi delectus impedit totam!
+            </div>
+            <div id="fourth">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus unde adipisci minus temporibus earum, dolores totam facere iste quisquam sequi necessitatibus harum veritatis amet maiores, nulla suscipit vero perferendis.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit veritatis, saepe atque porro molestiae quo nihil, harum vero eveniet ea, cum nam ex. Odio illo nesciunt esse sequi cumque natus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, numquam. Exercitationem repellendus libero ullam modi unde tempora itaque quidem perferendis, rerum nam enim facere recusandae saepe excepturi delectus impedit totam!
+            </div>
+            <div id="fourth">
+                    <img src="images/baby.jpeg" alt="Baby Pic">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus unde adipisci minus temporibus earum, dolores totam facere iste quisquam sequi necessitatibus harum veritatis amet maiores, nulla suscipit vero perferendis.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit veritatis, saepe atque porro molestiae quo nihil, harum vero eveniet ea, cum nam ex. Odio illo nesciunt esse sequi cumque natus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, numquam. Exercitationem repellendus libero ullam modi unde tempora itaque quidem perferendis, rerum nam enim facere recusandae saepe excepturi delectus impedit totam!
+            </div>
+        </div>
+    </body>
+</html>
