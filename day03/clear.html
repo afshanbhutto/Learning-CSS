@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Clear Property</title>
+    <style>
+        .container{
+            width: 80%;
+            border: 2px solid black;
+            margin: auto;
+            padding: 5px;
+            background-color: lightgreen;
+            font-variant: small-caps;
+            font-size: 14px;
+        }
+        .first{
+            border: 2px solid black;
+            float: left;
+            width: 30%;
+            padding: 5px;
+            margin-bottom: 5px;
+            background-color: lightcoral
+        }
+        .first span{
+            font-size: 2em;
+        }
+        /* em also works in compound exam[le of which is given in span and here size is being twice as of parent div */
+        .second{
+            border: 2px solid black;
+            float: right;
+            width: 30%;
+            padding: 5px;
+            margin-bottom: 5px;
+            background-color: lightcyan
+        }
+        .bottom{
+            width: 100%;
+            border: 2px solid black;
+            clear: both;
+            background-color: lightsalmon;
+            text-align: center
+        }
+        .clearProperty{
+            float: right
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Clear Property</h1>
+    <h2>POSTS PAGE</h2>
+    <div class="container">
+        <div class="first">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo nostrum numquam quos ipsam minus corporis esse id, itaque officiis tempore culpa quidem voluptas totam enim recusandae nesciunt ratione temporibus.
+            Lorem, ipsum dolor sit <span>amet consectetur <span>adipisicing </span> elit.</span> Sed quibusdam totam accusantium corrupti, ullam minima tempora recusandae ad perferendis aut suscipit? Mollitia voluptatibus expedita excepturi, deleniti sit ad vitae iure!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam eligendi maxime ipsam itaque sint eveniet delectus laboriosam iure totam porro ducimus magni nobis suscipit, non iste cupiditate nihil! Eum, impedit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam non facere maiores iure qui, fuga temporibus rerum. Repudiandae obcaecati qui eaque dolores culpa sapiente a? Quasi minima natus harum impedit.
+        </div>
+        <div class="second">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, animi praesentium recusandae exercitationem mollitia nulla tenetur reiciendis quam libero eaque sequi consectetur, quaerat labore dolores laborum! Aut minus vel ipsum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nihil corrupti cum ratione temporibus, quidem et rem quia earum, cupiditate eum nisi iure id aspernatur ea assumenda sapiente sed suscipit.
+        </div>
+        <div class="bottom">
+            This is the Bottom section
+            <div class="clearProperty">
+                clear:both
+            </div>
+        </div>
+    </div>
+</body>
+</html>
