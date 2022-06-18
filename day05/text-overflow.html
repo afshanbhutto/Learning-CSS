@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Text-Overflow</title>
+    <style>
+        .box{
+            width: 400px;
+            border: 2px solid black;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 30px
+        }
+        .box1{
+            width: 400px;
+            border: 2px solid black;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Text-Overflow</h1>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam mollitia aspernatur natus commodi dicta, explicabo tempore aliquid sequi et itaque optio quasi quisquam doloremque amet voluptatum fugiat, deleniti laborum odit?
+    </div>
+    <div class="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam mollitia aspernatur natus commodi dicta, explicabo tempore aliquid sequi et itaque optio quasi quisquam doloremque amet voluptatum fugiat, deleniti laborum odit?
+    </div>
+</body>
+</html>
