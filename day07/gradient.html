@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Gradient Background</title>
+    <style>
+        body{
+            width: 98%;
+            background-color: black;
+            
+        }
+        h1, .title{
+            color: lightblue
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 23px
+            
+        }
+        #container{
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            margin-right: 5px;
+            margin-bottom: 15px
+            
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: justify;
+            background: linear-gradient(45deg, yellow,red,lightblue,magenta,green)
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: justify;
+            background: linear-gradient(to right, yellow ,red , lightblue)
+        }
+        .box5{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: justify;
+            background: repeating-linear-gradient(to right,yellow ,red 5%, lightblue 5%, magenta 5% )
+        }
+        
+        .box4{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: justify;
+            background: radial-gradient(circle,yellow 25%,red 5%, lightblue 50%)
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: justify;
+            background: radial-gradient(closest-side at 80% 25%,yellow 25%,red 5%, lightblue 50%)
+        }
+        .box6{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: justify;
+            background: radial-gradient(farthest-side at 80% 25%,yellow 25%,red 5%, lightblue 50%)
+        }
+        .box7{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: justify;
+            background: radial-gradient(closest-corner at 10% 10%,yellow 25%,red 5%, lightblue 50%)
+        }
+        .box8{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: justify;
+            background: radial-gradient(farthest-corner at 20% 20%,yellow 25%,red 5%, lightblue 50%)
+        }
+        .box9{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: justify;
+            background: repeating-radial-gradient(yellow ,red 10%, lightblue 10%)
+        }
+        .box10{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: justify;
+            background: repeating-radial-gradient(circle,yellow ,red 50px, lightblue 100px)
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Gradient Background</h1>
+    <div class="main">
+    <div id="container">
+        <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel in dolorum, necessitatibus officiis blanditiis quibusdam ex nobis, error quam odio deleniti excepturi illum esse! Eaque quibusdam iste perferendis illum saepe!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="title">45deg Linear Gradient</div>
+    </div>
+
+    <div id="container">
+        <div class="box1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel in dolorum, necessitatibus officiis blanditiis quibusdam ex nobis, error quam odio deleniti excepturi illum esse! Eaque quibusdam iste perferendis illum saepe!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+         </div>
+        <div class="title">Linear Gradient to right</div>
+    </div>
+
+    
+    <div id="container">
+         <div class="box4">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel in dolorum, necessitatibus officiis blanditiis quibusdam ex nobis, error quam odio deleniti excepturi illum esse! Eaque quibusdam iste perferendis illum saepe!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="title">Radial Gradient</div>
+    </div>
+
+    <div id="container">
+         <div class="box2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel in dolorum, necessitatibus officiis blanditiis quibusdam ex nobis, error quam odio deleniti excepturi illum esse! Eaque quibusdam iste perferendis illum saepe!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="title">Radial Gradient Closest side</div>
+    </div>
+
+    <div id="container">
+            <div class="box9">
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel in dolorum, necessitatibus officiis blanditiis quibusdam ex nobis, error quam odio deleniti excepturi illum esse! Eaque quibusdam iste perferendis illum saepe!
+                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+           </div>
+           <div class="title">Repeating Radial Gradient</div>
+    </div>
+
+     <div id="container">
+        <div class="box5">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel in dolorum, necessitatibus officiis blanditiis quibusdam ex nobis, error quam odio deleniti excepturi illum esse! Eaque quibusdam iste perferendis illum saepe!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="title">Repeating Linear Gradient to right</div>
+    </div>
+
+
+    <div id="container">
+        <div class="box6">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel in dolorum, necessitatibus officiis blanditiis quibusdam ex nobis, error quam odio deleniti excepturi illum esse! Eaque quibusdam iste perferendis illum saepe!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+         </div>
+        <div class="title">Radial Gradient Farthest side</div>
+    </div>
+
+    <div id="container">
+         <div class="box7">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel in dolorum, necessitatibus officiis blanditiis quibusdam ex nobis, error quam odio deleniti excepturi illum esse! Eaque quibusdam iste perferendis illum saepe!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="title">Radial Gradient Closest corner</div>
+    </div>
+
+
+    <div id="container">
+         <div class="box8">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel in dolorum, necessitatibus officiis blanditiis quibusdam ex nobis, error quam odio deleniti excepturi illum esse! Eaque quibusdam iste perferendis illum saepe!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="title">Radial Gradient Farthest side</div>
+    </div>
+
+    <div id="container">
+         <div class="box10">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel in dolorum, necessitatibus officiis blanditiis quibusdam ex nobis, error quam odio deleniti excepturi illum esse! Eaque quibusdam iste perferendis illum saepe!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="title">Rounded (circle) Repeating Radial Gradient</div>
+    </div>
+</div>
+    
+</body>
+</html>
